@@ -1,0 +1,8 @@
+---
+title: "EDS 221: Day 1"
+author: "Heather Childers"
+format: html
+editor: visual
+---
+
+## Session 1:
