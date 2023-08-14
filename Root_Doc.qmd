@@ -1,0 +1,39 @@
+---
+title: "Root Document"
+format: html
+editor: visual
+
+execute: 
+  warning: false
+---
+
+## Session 1:
+
+```{r}
+library(tidyverse)
+```
+
+Read in Data from a file
+
+```{r}
+energy <- read_csv("data/us_energy.csv")
+view(energy)
+
+
+```
+
+Create a line chart of energy over time with color based on the energy type
+
+```{r}
+ggplot(data = energy, aes(x = year, y = quadrillion_btu)) +
+  geom_line(
+    aes(group = type))+
+  geom_point(
+    aes(color=type)
+  )
+```
+
+```{r}
+ggplot()+
+  geom_point(data = energy, aes (x = year, y = quadrillion_btu, color = type, size = ))
+```
