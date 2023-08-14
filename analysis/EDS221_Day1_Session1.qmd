@@ -3,10 +3,19 @@ title: "EDS 221: Day 1"
 author: "Heather Childers"
 format: html
 editor: visual
+
+execute: 
+  warning: false
 ---
 
 ## Session 1:
 
 ```{r}
+library(tidyverse)
+```
 
+Moving back and forth along a path using the ".." command
+
+```{r}
+energy2 <- read_csv("../data/us_energy.csv")
 ```
